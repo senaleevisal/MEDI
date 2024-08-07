@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="839.0" style="-fx-background-color: #89cffc;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="43.0" fitWidth="36.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="46.0" text="MEDI" textFill="#0c4480">
+         <font>
+            <Font name="Avenir Black Oblique" size="32.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="6.0" layoutY="45.0" prefHeight="483.0" prefWidth="823.0" />
+      <Label layoutX="344.0" layoutY="4.0" text="RECEPTION" textFill="#497bbc">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="793.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 10;">
+         <image>
+            <Image url="@../../../assets/images/default_avatar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
