@@ -3,7 +3,7 @@ package edu.nibm.medi;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HomeController {
+public class HelloController {
     @FXML
     private Label welcomeText;
 
