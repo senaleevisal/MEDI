@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="535.0" prefWidth="839.0" style="-fx-background-color: #677D6A;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.nibm.medi.Controller.PatientViewController">
+
+    <children>
+        <ImageView fitHeight="43.0" fitWidth="36.0" layoutX="16.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../assets/images/logo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="56.0" layoutY="10.0" onMouseClicked="#onLogoClick" text="MEDI" textFill="#1a3636">
+            <font>
+                <Font name="Avenir Black Oblique" size="32.0" />
+            </font>
+        </Label>
+        <Label layoutX="318.0" layoutY="17.0" text="VIEW PATIENTS" textFill="#40534c">
+            <font>
+                <Font size="29.0" />
+            </font>
+        </Label>
+      <TableView fx:id="patientTableView" layoutX="24.0" layoutY="83.0" prefHeight="399.0" prefWidth="791.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="182.0" text="Name" />
+          <TableColumn fx:id="ageColumn" minWidth="5.0" prefWidth="89.0" text="Age" />
+            <TableColumn fx:id="contactNumberColumn" prefWidth="143.0" text="Contact Number" />
+            <TableColumn fx:id="doctorColumn" prefWidth="154.0" text="Doctor" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="222.0" text="Description" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="378.0" layoutY="491.0" onAction="#loadPatients" style="-fx-background-color: #1A3636;" text="Refresh" textFill="#d6bd98">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+    </children>
+
+</AnchorPane>

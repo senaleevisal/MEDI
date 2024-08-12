@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="839.0" style="-fx-background-color: #677D6A;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.nibm.medi.Controller.DoctorAttendanceController">
+    <children>
+        <ImageView fitHeight="43.0" fitWidth="36.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../assets/images/logo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="46.0" onMouseClicked="#onLogoClick" text="MEDI" textFill="#1a3636">
+            <font>
+                <Font name="Avenir Black Oblique" size="32.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="5.0" layoutY="59.0" prefHeight="470.0" prefWidth="829.0">
+            <children>
+                <TableView layoutX="14.0" layoutY="29.0" prefHeight="426.0" prefWidth="802.0">
+                    <columns>
+                        <TableColumn prefWidth="341.0" text="Doctor Name" />
+                        <TableColumn minWidth="2.0" prefWidth="235.0" text="Doctor " />
+                    </columns>
+                </TableView>
+            </children></AnchorPane>
+        <Label layoutX="313.0" layoutY="7.0" text="Available Doctors" textFill="WHITE">
+            <font>
+                <Font size="29.0" />
+            </font>
+        </Label>
+        <Button layoutX="756.0" layoutY="12.0" mnemonicParsing="false" text="ok" />
+    </children>
+
+</AnchorPane>

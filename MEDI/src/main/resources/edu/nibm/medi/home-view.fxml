@@ -1,37 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Cursor?>
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="839.0" style="-fx-background-color: #89cffc;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="839.0" style="-fx-background-color: #677D6A;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.nibm.medi.Controller.HomeController">
    <children>
       <ImageView fitHeight="43.0" fitWidth="36.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../assets/images/logo.png" />
          </image>
       </ImageView>
-      <Label layoutX="46.0" text="MEDI" textFill="#0c4480">
+      <Label layoutX="46.0" text="MEDI" textFill="#1a3636">
          <font>
             <Font name="Avenir Black Oblique" size="32.0" />
          </font>
       </Label>
-      <AnchorPane layoutX="6.0" layoutY="45.0" prefHeight="483.0" prefWidth="823.0" />
-      <Label layoutX="344.0" layoutY="4.0" text="RECEPTION" textFill="#497bbc">
+      <AnchorPane layoutX="6.0" layoutY="45.0" prefHeight="483.0" prefWidth="823.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="186.0" layoutY="207.0" onAction="#removeDoctorButtonClick" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: #1A3636;" text="Remove Doctor" textFill="#d6bd98">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="186.0" layoutY="148.0" onAction="#onAddDoctorButtonClick" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: #1A3636;" text="ADD Doctor" textFill="#d6bd98">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="186.0" layoutY="262.0" onAction="#onDoctorsAttendanceButtonClick" style="-fx-background-color: #1A3636;" text="Doctors Atendance" textFill="#d6bd98">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="186.0" layoutY="320.0" onAction="#viewDoctorButtonClick" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: #1A3636;" text="Available Doctors" textFill="#d6bd98">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="487.0" layoutY="207.0" onAction="#removePatientButtonClick" prefHeight="35.0" prefWidth="151.0" style="-fx-background-color: #1A3636;" text="Remove Patient" textFill="#d6bd98">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="487.0" layoutY="148.0" onAction="#onAddPatientButtonClick" prefHeight="35.0" prefWidth="151.0" style="-fx-background-color: #1A3636;" text="ADD Patient" textFill="#d6bd98">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="487.0" layoutY="262.0" onAction="#viewPatientButtonClick" prefHeight="35.0" prefWidth="151.0" style="-fx-background-color: #1A3636;" text="View Patients" textFill="#d6bd98">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children></AnchorPane>
+      <Label layoutX="344.0" layoutY="4.0" text="RECEPTION" textFill="#40534c">
          <font>
             <Font size="29.0" />
          </font>
       </Label>
-      <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="793.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 10;">
-         <image>
-            <Image url="@../../../assets/images/default_avatar.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="DEFAULT" />
-         </cursor>
-      </ImageView>
    </children>
 </AnchorPane>
