@@ -36,7 +36,7 @@
             <TableColumn fx:id="descriptionColumn" prefWidth="222.0" text="Description" />
         </columns>
       </TableView>
-      <JFXButton buttonType="RAISED" layoutX="378.0" layoutY="491.0" onAction="#loadPatients" style="-fx-background-color: #1A3636;" text="Refresh" textFill="#d6bd98">
+      <JFXButton buttonType="RAISED" layoutX="378.0" layoutY="491.0" onAction="#loadPatient" style="-fx-background-color: #1A3636;" text="Refresh" textFill="#d6bd98">
          <font>
             <Font size="18.0" />
          </font>
